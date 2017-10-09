@@ -130,12 +130,20 @@ section {
 /* Custom Re-usable class styles */
 
 .list {
+	position: relative;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	max-width: 100%;
 }
 
 .employer-card {
+	min-width: 47%;
+	max-width: 47%;
+}
+
+.project-card {
 	min-width: 47%;
 	max-width: 47%;
 }
