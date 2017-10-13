@@ -247,8 +247,12 @@ strong {
 }
 
 /* Custom Re-usable class styles */
-.padded{
+.padded {
 	padding: 1em;
+}
+
+.margin-top {
+	margin-top: 0.5em;
 }
 
 .list {
