@@ -244,6 +244,9 @@ section {
 
 
 /* Custom Re-usable class styles */
+.padded{
+	padding: 1em;
+}
 
 .list {
   position: relative;
@@ -289,4 +292,29 @@ section {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+.img-box {
+	position: relative;
+  width: 20%;
+  height: 5em;
+  background-color: white;
+	top: -15em;
+}
+
+.contact-image {
+	height: 40%;
+}
+
+.box-head {
+	text-align: center;
+	padding: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box-body {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
