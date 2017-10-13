@@ -131,6 +131,8 @@ table {
 
 /* Custom CSS */
 
+@import url('https://fonts.googleapis.com/css?family=Lato|Lobster');
+
 html {
   background-color: #67fca8;
   max-width: 100%;
@@ -149,6 +151,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -173,19 +177,32 @@ aside {
 }
 
 h1 {
+  font-family: 'Lobster', cursive;
+  font-weight: 700;
   font-size: 2em;
 }
 
 h2 {
+  font-weight: 500;
   font-size: 1.5em;
 }
 
 h3 {
+  font-weight: 400;
   font-size: 1.2em;
 }
 
 h4 {
+  font-weight: 300;
   font-size: 1em;
+}
+
+p {
+  font-weight: 200;
+}
+
+figcaption {
+  font-weight: 400;
 }
 
 a {
