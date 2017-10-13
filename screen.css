@@ -255,6 +255,10 @@ strong {
 	margin-top: 0.5em;
 }
 
+.rounded-image {
+  border-radius: 50%;
+}
+
 .list {
   position: relative;
   display: flex;
@@ -324,4 +328,19 @@ strong {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.main-profile {
+	min-width: 15%;
+	max-width: 15%;
+}
+
+#home #content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.main-intro {
+	margin-left: 2em;
 }
