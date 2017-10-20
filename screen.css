@@ -7,9 +7,18 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
-/* Custom CSS */
+/* Base Styles */
+/*
+  Hint: these tend to be
+  1. element selectors
+  2. concerned with color and typography
+  3. basic element presenation
+*/
 
-/* base font */
+/*
+  Setting type with a 4:3 modular scale
+  http://www.modularscale.com/?18&px&1.333
+*/
 
 html {
   background-color: #67fca8;
@@ -17,22 +26,18 @@ html {
 }
 
 body {
-  margin-top: 4%;
-  margin-bottom: 4%;
+  line-height: 1.4;
+  margin: 4% auto;
   padding: 4%;
-  min-width: 80%;
   max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #fff;
   font-weight: 300;
-	font-size: 0.9em;
+    font-size: 0.9em;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
 header {
-  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -57,7 +62,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.7em;
 }
 
@@ -74,10 +79,6 @@ h4 {
 h5 {
 	font-weight: 400;
   font-size: 1em;
-}
-
-p {
-  font-weight: 200;
 }
 
 figcaption {
@@ -122,10 +123,17 @@ section {
 }
 
 strong {
-	font-weight: 400;
+    font-weight: 400;
 }
 
-/* Custom Re-usable class styles */
+/* Layout Styles */
+/*
+  Hint: these tend to be
+  1. IDs; but also classes, sometimes
+  2. concerned with layout and spatial
+     relationships
+*/
+
 .padded {
 	padding: 1em;
 }
@@ -144,23 +152,19 @@ strong {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 100%;
 }
 
 .card-image {
-  min-width: 100%;
   max-width: 100%;
 	margin-top: 1em;
 }
 
 .text-card {
-  min-width: 47%;
-  max-width: 47%;
+  width: 47%;
 }
 
 .project-card {
-  min-width: 47%;
-  max-width: 47%;
+  width: 47%;
 }
 
 .nav-a:before {
@@ -214,12 +218,22 @@ strong {
 	max-width: 15%;
 }
 
-#home #content {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
 .main-intro {
 	margin-left: 2em;
+}
+
+
+/* Modular Styles */
+/*
+  Repeating style patterns.
+  Hint: these tend to be:
+  1. classes and relationship selectors
+  2. concerned with adjustments to base styles,
+      spacing, color, etc. etc.
+*/
+
+#home #content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
