@@ -43,6 +43,8 @@ header {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   margin-top: 3.667em; /* 66 / 18 = 3.667... */
 }
 
