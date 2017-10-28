@@ -134,6 +134,10 @@ strong {
      relationships
 */
 
+.main-profile {
+  width: 50%;
+}
+
 .padded {
   padding: 1em;
 }
@@ -157,14 +161,6 @@ strong {
 .card-image {
   max-width: 100%;
   margin-top: 1em;
-}
-
-.text-card {
-  width: 47%;
-}
-
-.project-card {
-  width: 47%;
 }
 
 .nav-a:before {
@@ -193,7 +189,7 @@ strong {
   width: 20%;
   height: 5em;
   background-color: white;
-    top: -15em;
+  top: -15em;
 }
 
 .contact-image {
@@ -213,11 +209,6 @@ strong {
   margin-right: auto;
 }
 
-.main-profile {
-  min-width: 15%;
-  max-width: 15%;
-}
-
 .main-intro {
   margin-left: 2em;
 }
@@ -232,7 +223,53 @@ strong {
 */
 
 #home #content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* State */
+
+@media screen and (min-width: 370px) {
+
+  body {
+    padding-right: 5.9459459%; /* 22 / 370 = 0.059459459 */
+    padding-left: 5.9459459%; /* 22 / 370 = 0.059459459 */
+  }
+
+}
+
+@media screen and (min-width: 625px) {
+
+  html {
+    font-size: 1.25em; /* 20 / 16 = 1.25 */
+  }
+
+}
+
+@media screen and (min-width: 720px) {
+
+  body {
+    padding-right: 11.1111111%; /* 80 / 720 = 0.111111111 */
+    padding-left: 11.1111111%; /* 80 / 720 = 0.111111111 */
+  }
+
+  #home #content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-profile {
+    min-width: 15%;
+    max-width: 15%;
+  }
+
+  .text-card {
+    width: 47%;
+  }
+
+  .project-card {
+    width: 47%;
+  }
+
 }
