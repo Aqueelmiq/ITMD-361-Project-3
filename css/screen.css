@@ -20,26 +20,23 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
   background-color: #67fca8;
-  font-family: "Lato", sans-serif;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  font-family: Lato, sans-serif;
 }
 
 body {
-  line-height: 1.4;
+  padding-top: 3.667em; /* 66 / 18 = 3.667... */
   margin: 4% auto;
-  padding: 4%;
-  max-width: 80%;
+  max-width: 90%;
   background-color: #fff;
-  font-weight: 300;
-  font-size: 0.9em;
 }
 
 header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
