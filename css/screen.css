@@ -28,7 +28,9 @@ html {
 
 body {
   padding-top: 3.667em; /* 66 / 18 = 3.667... */
-  margin: 4% auto;
+  padding-right: 1.222em; /* 22 / 18 = 1.2222222222 */
+  padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
+  margin: 1.222em auto; /* 22 / 18 = 1.2222222222 */
   max-width: 90%;
   background-color: #fff;
 }
@@ -41,21 +43,31 @@ header {
 }
 
 main {
-  margin-top: 5em;
+  margin-top: 3.667em; /* 66 / 18 = 3.667... */
 }
 
 footer {
-  margin-top: 5em;
+  margin-top: 1.222em; /* 22 / 18 = 1.2222222222 */
+  padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
+  text-align: center;
 }
 
 aside {
-  margin-top: 1em;
+  margin-top: 1.222em; /* 22 / 18 = 1.2222222222 */
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
+  font-weight: 400;
 }
 
 h1 {
   font-family: "Dancing Script", cursive;
-  font-weight: 400;
-  font-size: 2em;
+  font-size: 1.222em; /* 22 / 18 = 1.2222222222 */
 }
 
 h2 {
@@ -64,17 +76,14 @@ h2 {
 }
 
 h3 {
-  font-weight: 400;
   font-size: 1.2em;
 }
 
 h4 {
-  font-weight: 400;
   font-size: 1.1em;
 }
 
 h5 {
-  font-weight: 400;
   font-size: 1em;
 }
 
@@ -85,7 +94,6 @@ figcaption {
 a {
   position: relative;
   color: #000;
-  margin: 0;
   text-decoration: none;
 }
 
@@ -99,8 +107,9 @@ img {
 }
 
 nav {
-  min-width: 33%;
-  max-width: 50%;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
 }
 
 nav ul {
@@ -132,7 +141,7 @@ strong {
 */
 
 .main-profile {
-  width: 50%;
+
 }
 
 .padded {
@@ -148,9 +157,7 @@ strong {
 }
 
 .list {
-  position: relative;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
