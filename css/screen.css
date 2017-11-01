@@ -76,6 +76,10 @@ figcaption {
   font-style: italic;
 }
 
+footer {
+  padding-top: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
