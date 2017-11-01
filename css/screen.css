@@ -81,9 +81,25 @@ nav ul {
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+  padding-bottom: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
 }
 
 img {
   width: 100%;
   object-fit: contain;
+}
+
+a {
+  position: relative;
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #000;
+}
+
+a:active {
+  font-style: italic;
+  color: #67fca8;
 }
