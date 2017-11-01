@@ -69,3 +69,14 @@ figure {
   padding-top: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
   padding-bottom: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
 }
+
+header {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
