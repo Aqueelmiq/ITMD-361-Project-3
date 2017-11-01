@@ -154,6 +154,12 @@ li {
   border-radius: 50%;
 }
 
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .contact-item {
   margin: 0.6111111111em; /* 11 / 18 = 0.6111111111 */;
   border: 0.305555555em black solid; /* 5.5 / 18 = 0.6111111111 */
@@ -180,9 +186,16 @@ li {
 
 
 @media screen and (min-width: 640px) {
+
   body {
     text-align: left;
   }
+
+  .main-profile {
+    min-width: 15%;
+    max-width: 15%;
+  }
+
 }
 
 @media screen and (min-width: 860px) {
@@ -196,6 +209,19 @@ li {
   body {
     margin-right: 9.302325581%; /* 80 / 860 = 0.09302325581% */
     margin-left: 9.302325581%; /* 80 / 860 = 0.09302325581% */
+  }
+
+  .list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .text-card {
+    width: 49%;
+  }
+
+  .project-card {
+    width: 49%;
   }
 
   .nav-a {
