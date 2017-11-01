@@ -192,8 +192,8 @@ li {
   }
 
   .main-profile {
-    min-width: 15%;
-    max-width: 15%;
+    min-width: 33%;
+    max-width: 33%;
   }
 
 }
@@ -209,6 +209,11 @@ li {
   body {
     margin-right: 9.302325581%; /* 80 / 860 = 0.09302325581% */
     margin-left: 9.302325581%; /* 80 / 860 = 0.09302325581% */
+  }
+
+  .main-profile {
+    min-width: 25%;
+    max-width: 25%;
   }
 
   .list {
