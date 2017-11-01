@@ -24,6 +24,7 @@ html {
   line-height: 1.2222222222em;; /* 22 / 18 = 1.2222222222 */
   background-color: #67fca8;
   font-family: Lato, sans-serif;
+  font-weight: 300;
 }
 
 body {
@@ -107,3 +108,15 @@ a:active {
   font-style: italic;
   color: #67fca8;
 }
+
+strong {
+  font-weight: 400;
+}
+
+/* Layout Styles */
+/*
+  Hint: these tend to be
+  1. IDs; but also classes, sometimes
+  2. concerned with layout and spatial
+     relationships
+*/
