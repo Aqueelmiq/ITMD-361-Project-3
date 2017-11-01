@@ -159,3 +159,42 @@ li {
   border: 0.305555555em black solid; /* 5.5 / 18 = 0.6111111111 */
   background-color: white;
 }
+
+
+/* State Styles */
+/*
+  States of the browser and user access
+  conditions.
+  Hint: these tend to be:
+  1. Driven by media queries
+  2. Influenced by JavaScript
+  3. Organized by Base, Layout, Module, State
+*/
+
+@media screen and (min-width: 375px) {
+  body {
+    margin-right: 11.73333333%; /* 44 / 375 = 11.73333333% */
+    margin-left: 11.73333333%; /* 44 / 375 = 11.73333333% */
+  }
+}
+
+
+@media screen and (min-width: 640px) {
+  body {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  /*
+    700 pixel grid w/ 80px margins (160)
+    Columns: 200px;
+    Gutters: 50px;
+    Primary module: 450px;
+    Secondary module: 200px;
+  */
+  body {
+    margin-right: 9.302325581%; /* 80 / 860 = 0.09302325581% */
+    margin-left: 9.302325581%; /* 80 / 860 = 0.09302325581% */
+  }
+}
