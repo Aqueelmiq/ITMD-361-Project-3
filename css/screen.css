@@ -124,3 +124,17 @@ li {
   2. concerned with layout and spatial
      relationships
 */
+
+
+/* Modular Styles */
+/*
+  Repeating style patterns.
+  Hint: these tend to be:
+  1. classes and relationship selectors
+  2. concerned with adjustments to base styles,
+      spacing, color, etc. etc.
+*/
+
+.rounded-image {
+  border-radius: 50%;
+}
