@@ -38,8 +38,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   padding-bottom: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
 }
 
@@ -65,7 +64,8 @@ h5 {
 
 section,
 article,
-aside {
+aside,
+figure {
   padding-top: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
-  padding-bottom: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+  padding-bottom: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
 }
