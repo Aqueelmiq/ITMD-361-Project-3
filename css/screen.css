@@ -27,10 +27,38 @@ html {
 }
 
 body {
-  padding-top: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
-  padding-right: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
-  padding-left: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+  padding: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
   margin: 1.2222222222em auto; /* 22 / 18 = 1.2222222222 */
   max-width: 90%;
   background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding-bottom: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em; /* 23.994 / 16 = 1.5 */
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.999em; /* 31.984 / 16 = 1.5 */
+}
+
+h3 {
+  font-size: 1.5em; /* 23.994 / 16 = 1.5 */
+  font-weight: 500;
+}
+
+h4,
+h5 {
+  font-weight: 500;
 }
