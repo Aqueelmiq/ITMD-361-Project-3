@@ -71,6 +71,11 @@ figure {
   padding-bottom: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
 }
 
+figcaption {
+  font-size: 0.844em; /* 13.503 / 16 */
+  font-style: italic;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
