@@ -18,3 +18,19 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   Setting type with a 4:3 modular scale
   http://www.modularscale.com/?18&px&1.333
 */
+
+html {
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.2222222222em;; /* 22 / 18 = 1.2222222222 */
+  background-color: #67fca8;
+  font-family: Lato, sans-serif;
+}
+
+body {
+  padding-top: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
+  padding-right: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+  padding-left: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+  margin: 1.2222222222em auto; /* 22 / 18 = 1.2222222222 */
+  max-width: 90%;
+  background-color: #fff;
+}
