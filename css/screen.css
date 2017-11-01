@@ -211,9 +211,10 @@ li {
     Primary module: 450px;
     Secondary module: 200px;
   */
+
   body {
-    margin-right: 9.302325581%; /* 80 / 860 = 0.09302325581% */
-    margin-left: 9.302325581%; /* 80 / 860 = 0.09302325581% */
+    margin-right: 4.6511627%; /* 40 / 860 = 0.09302325581% */
+    margin-left: 4.6511627%; /* 40 / 860 = 0.09302325581% */
   }
 
   header {
