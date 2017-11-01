@@ -1,4 +1,4 @@
-# ITMD-361-Project1
-Fundamentals of Web Dev Class project - 1
+# ITMD-361-Project-2
+Fundamentals of Web Dev Class project 2
 
-This is my personal website. Create as a project for ITM-D-361
+This is my personal website. In this project, I will add CSS to style my website.
