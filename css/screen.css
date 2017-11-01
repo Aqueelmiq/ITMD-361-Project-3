@@ -211,6 +211,17 @@ li {
     margin-left: 9.302325581%; /* 80 / 860 = 0.09302325581% */
   }
 
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav {
+    width: 33%;
+  }
+  
   .main-profile {
     min-width: 25%;
     max-width: 25%;
