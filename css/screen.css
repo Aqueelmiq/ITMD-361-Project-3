@@ -125,6 +125,21 @@ li {
      relationships
 */
 
+#contact-list {
+  position: relative;
+  margin-top: -21em;
+  padding-bottom: 2em;
+}
+
+#contact-figure {
+  height: 22em;
+  overflow: hidden;
+}
+
+#contact-figure img {
+  min-width: 800%;
+  min-height: 100%;
+}
 
 /* Modular Styles */
 /*
