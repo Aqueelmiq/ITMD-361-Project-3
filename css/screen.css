@@ -113,6 +113,10 @@ strong {
   font-weight: 400;
 }
 
+li {
+  padding-bottom: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
+}
+
 /* Layout Styles */
 /*
   Hint: these tend to be
