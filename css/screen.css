@@ -191,6 +191,11 @@ li {
     text-align: left;
   }
 
+  .list {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
   .main-profile {
     min-width: 33%;
     max-width: 33%;
@@ -221,13 +226,14 @@ li {
   nav {
     width: 33%;
   }
-  
+
   .main-profile {
     min-width: 25%;
     max-width: 25%;
   }
 
   .list {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
