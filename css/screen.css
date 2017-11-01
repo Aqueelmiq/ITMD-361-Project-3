@@ -138,3 +138,9 @@ li {
 .rounded-image {
   border-radius: 50%;
 }
+
+.contact-item {
+  margin: 0.6111111111em; /* 11 / 18 = 0.6111111111 */;
+  border: 0.305555555em black solid; /* 5.5 / 18 = 0.6111111111 */
+  background-color: white;
+}
