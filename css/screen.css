@@ -127,8 +127,7 @@ li {
 
 #contact-list {
   position: relative;
-  margin-top: -21em;
-  padding-bottom: 2em;
+  padding-bottom: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
 }
 
 /* Modular Styles */
@@ -173,7 +172,6 @@ li {
   }
 }
 
-
 @media screen and (min-width: 640px) {
 
   body {
@@ -207,7 +205,7 @@ li {
   }
 
   nav {
-    width: 33%;
+    width: 25.81395%; /* 222 / 860 = 25.81395% */
   }
 
   #home main {
@@ -216,14 +214,13 @@ li {
   }
 
   #home .main-profile {
-    width: 20%;
+    width: 17.90697%; /* 154 / 860 = 17.90697% */
     padding-left: 3.8372%; /* 33 / 860 = 3.8372% */
     padding-right: 3.8372%; /* 33 / 860 = 3.8372% */
   }
 
   .main-profile {
-    min-width: 25%;
-    max-width: 25%;
+    width: 25.81395%; /* 222 / 860 = 25.81395% */
   }
 
   .list {
@@ -232,17 +229,9 @@ li {
     justify-content: space-between;
   }
 
-  .text-card {
-    width: 49%;
-  }
-
+  .text-card
   .project-card {
-    width: 49%;
-  }
-
-  #contact-list {
-    flex-direction: row;
-    justify-content: space-between;
+    width: 48.60465%; /* 418 / 860 = 48.60465% */
   }
 
   .nav-a {
