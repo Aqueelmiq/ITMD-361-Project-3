@@ -155,13 +155,12 @@ li {
 }
 
 .list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .contact-item {
-  margin: 0.6111111111em; /* 11 / 18 = 0.6111111111 */;
+  margin: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
   border: 0.305555555em black solid; /* 5.5 / 18 = 0.6111111111 */
   background-color: white;
 }
@@ -179,8 +178,8 @@ li {
 
 @media screen and (min-width: 375px) {
   body {
-    margin-right: 11.73333333%; /* 44 / 375 = 11.73333333% */
-    margin-left: 11.73333333%; /* 44 / 375 = 11.73333333% */
+    margin-right: 2.93333333%; /* 11 / 375 = 2.93333333% */
+    margin-left: 2.93333333%; /* 11 / 375 = 2.93333333% */
   }
 }
 
@@ -188,12 +187,9 @@ li {
 @media screen and (min-width: 640px) {
 
   body {
+    margin-right: 3.4375%; /* 22 / 640 = 3.4375% */
+    margin-left: 3.4375%;; /* 22 / 640 = 3.4375% */
     text-align: left;
-  }
-
-  .list {
-    flex-direction: column;
-    justify-content: flex-start;
   }
 
   .main-profile {
@@ -206,15 +202,11 @@ li {
 @media screen and (min-width: 860px) {
   /*
     700 pixel grid w/ 80px margins (160)
-    Columns: 200px;
-    Gutters: 50px;
-    Primary module: 450px;
-    Secondary module: 200px;
   */
 
   body {
-    margin-right: 4.6511627%; /* 40 / 860 = 0.09302325581% */
-    margin-left: 4.6511627%; /* 40 / 860 = 0.09302325581% */
+    margin-right: 3.8372%; /* 33 / 860 = 3.8372% */
+    margin-left: 3.8372%; /* 33 / 860 = 3.8372% */
   }
 
   header {
