@@ -14,6 +14,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   3. basic element presenation
 */
 
+.list {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 /*
   Setting type with a 4:3 modular scale
   http://www.modularscale.com/?18&px&1.333
@@ -143,11 +148,6 @@ li {
   border-radius: 50%;
 }
 
-.list {
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .contact-item {
   margin: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
   border: 0.305555555em black solid; /* 5.5 / 18 = 0.6111111111 */
@@ -189,7 +189,7 @@ li {
 
 @media screen and (min-width: 860px) {
   /*
-    700 pixel grid w/ 80px margins (160)
+    794 pixel grid w/ 33px margins (66)
   */
 
   body {
@@ -219,19 +219,33 @@ li {
     padding-right: 3.8372%; /* 33 / 860 = 3.8372% */
   }
 
+  #contact-list {
+    text-align: center;
+    padding: 1.2222222222em; /* 22 / 18 = 1.2222222222 */;
+  }
+
   .main-profile {
     width: 25.81395%; /* 222 / 860 = 25.81395% */
   }
 
   .list {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
+  .list li {
+    max-width: 47.325581%; /* 407 / 860 = 47.325581% */
+  }
+
   .text-card
   .project-card {
-    width: 48.60465%; /* 418 / 860 = 48.60465% */
+    max-width: 47.325581%; /* 407 / 860 = 47.325581% */
+  }
+
+  .contact-item {
+    width: 17.90697%; /* 154 / 860 = 17.90697% */
   }
 
   .nav-a {
