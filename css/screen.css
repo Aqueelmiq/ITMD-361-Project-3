@@ -14,9 +14,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   3. basic element presenation
 */
 
-.list {
+.flexbox .list {
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.no-flexbox .list {
+  display: block;
 }
 
 /*
@@ -103,10 +107,7 @@ footer {
   border: 0.4em solid white;
 }
 
-.flexbox #nav-overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+#nav-overlay {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -116,16 +117,12 @@ footer {
   z-index: 10;
 }
 
-.flexbox #overlay-nav-items {
-  flex: 1;
+#overlay-nav-items {
   padding: 22% 0; /* 22 / 18 = 1.2222222222 */
 }
 
-.flexbox #overlay-nav-items ul {
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
+#overlay-nav-items ul {
+  display: block;
 }
 
 #overlay-nav-items ul a {
@@ -133,9 +130,7 @@ footer {
 }
 
 .flexbox #info-dialog{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  display: block;
   position: fixed;
   width: 60%;
   height: 70%;
@@ -151,9 +146,14 @@ footer {
   box-shadow: -1em 0.2em 2em -1em rgba(0,0,0,0.7);
 }
 
-#project-skills {
+.flexbox #project-skills {
   display: flex;
   justify-content: space-between;
+}
+
+.no-flexbox .project-skillset {
+  float: left;
+  min-width: 33%;
 }
 
 nav ul {
@@ -299,6 +299,14 @@ li {
   nav {
     width: 25.81395%; /* 222 / 860 = 25.81395% */
   }
+
+  .no-flexbox nav {
+    float: right;
+  } 
+
+  .no-flexbox nav li {
+    display: inline-block;
+  } 
 
   .flexbox #home-main {
     display: flex;
