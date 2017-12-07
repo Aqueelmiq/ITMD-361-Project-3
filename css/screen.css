@@ -19,10 +19,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   justify-content: flex-start;
 }
 
-.no-flexbox .list {
-  display: block;
-}
-
 /*
   Setting type with a 4:3 modular scale
   http://www.modularscale.com/?18&px&1.333
@@ -351,19 +347,37 @@ li {
     justify-content: space-between;
   }
 
+  .no-flexbox section {
+    clear: both;
+  }
+
   .list li {
     min-width: 47.325581%; /* 407 / 860 = 47.325581% */
     max-width: 47.325581%; /* 407 / 860 = 47.325581% */
   }
 
-  .text-card
-  .project-card {
+  .text-card, .project-card {
     min-width: 47.325581%; /* 407 / 860 = 47.325581% */
     max-width: 47.325581%; /* 407 / 860 = 47.325581% */
   }
 
+  .no-flexbox
+  .list
+  .text-card, .project-card {
+    padding: 0.6111111111em;
+    float: left;
+  }
+
   .contact-item {
     width: 17.90697%; /* 154 / 860 = 17.90697% */
+  }
+
+  .no-flexbox .contact-item {
+    display: inline-block;
+  }
+
+  .no-flexbox footer {
+    clear: both;
   }
 
   .nav-a {
