@@ -89,7 +89,36 @@
         $("#info-dialog").hide();
     });
 
+    
+    var findDetail = function(name) {
+        return projects.filter(function(data) {
+            return data.name === name;
+        })[0]
+    };
+
+    var clearElement = function(node) {
+        while(node.firstChild) {
+            node.removeChild(node.firstChild);
+        }
+    }
+
+    var appendAsList = function(list, root) {
+        $(root).empty()
+        list.forEach(function(data) {
+            $(root).append(
+                $('<div/>').text(data)
+            );
+        });
+    };
+
     $("#cheat-app-btn").click(function(){
+        var details = findDetail("cheat-app");
+        $("#project-title").text(details.title);
+        $("#project-img").attr("src", details.img_url);
+        $("long-descr").text(details.long_desr);
+        appendAsList(details.languages, "#project-languages")
+        appendAsList(details.frameworks, "#project-frameworks")
+        appendAsList(details.tools, "#project-tools")
         $("#info-dialog").show();
     });
 
