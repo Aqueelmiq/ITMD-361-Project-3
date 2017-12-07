@@ -264,17 +264,6 @@ li {
     display: none;
   }
 
-  .flexbox header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .no-flexbox h1 {
-    float: left;
-  }
-
   .flexbox nav ul {
     display: flex;
     flex-direction: row;
@@ -301,7 +290,7 @@ li {
     max-width: 33%;
   }
 
-  .no-flexbox .main-profile {
+  .no-flexbox main {
     clear: both;
   }
 
@@ -317,24 +306,34 @@ li {
     margin-left: 3.8372%; /* 33 / 860 = 3.8372% */
   }
 
-  nav {
-    width: 25.81395%; /* 222 / 860 = 25.81395% */
+  .flexbox header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .no-flexbox h1 {
+    float: left;
   }
 
   .no-flexbox nav {
     float: right;
   } 
 
-  .no-flexbox nav li {
-    display: inline-block;
-  } 
+  .flexbox nav {
+    width: 25.81395%; /* 222 / 860 = 25.81395% */
+  }
 
   .flexbox #home-main {
     display: flex;
     flex-direction: row;
   }
 
-  #home .main-profile {
+  .no-flexbox .main-profile {
+    float: left;
+  }
+  .main-profile {
     width: 17.90697%; /* 154 / 860 = 17.90697% */
     padding-left: 3.8372%; /* 33 / 860 = 3.8372% */
     padding-right: 3.8372%; /* 33 / 860 = 3.8372% */
@@ -352,7 +351,7 @@ li {
     justify-content: space-between;
   }
 
-  .flexbox .list li {
+  .list li {
     min-width: 47.325581%; /* 407 / 860 = 47.325581% */
     max-width: 47.325581%; /* 407 / 860 = 47.325581% */
   }
