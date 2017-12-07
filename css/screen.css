@@ -144,10 +144,16 @@ footer {
   background-color: white;
   z-index: 10;
   border-radius: 1em;
-  padding: 1em;
+  padding: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+  overflow-y: scroll;
   -webkit-box-shadow: -1em 0.2em 2em -1em rgba(0,0,0,0.7);
   -moz-box-shadow: -1em 0.2em 2em -1em rgba(0,0,0,0.7);
   box-shadow: -1em 0.2em 2em -1em rgba(0,0,0,0.7);
+}
+
+#project-skills {
+  display: flex;
+  justify-content: space-between;
 }
 
 nav ul {
