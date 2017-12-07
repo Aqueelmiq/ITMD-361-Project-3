@@ -26,7 +26,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
-  line-height: 1.2222222222em;; /* 22 / 18 = 1.2222222222 */
+  line-height: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
   background-color: #67fca8;
   font-family: Lato, sans-serif;
   font-weight: 300;
@@ -86,12 +86,50 @@ footer {
   padding-top: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
 }
 
-.nav-button {
+#nav-button {
   background-color: rgba(0,0,0,0);
   font-size: 0.75em;
   padding: 0.6111111111em;
   margin: 0.6111111111em;
   border: 0.6111111111em dashed black;
+}
+
+#nav-close-button {
+  color: white;
+  background-color: rgba(0,0,0,0);
+  font-size: 0.6em;
+  padding: 0.6111111111em;
+  margin: 0.6111111111em;
+  border: 0.4em solid white;
+}
+
+#nav-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,10,0.9);
+  z-index: 10;
+}
+
+#overlay-nav-items {
+  flex: 1;
+  padding: 22% 0; /* 22 / 18 = 1.2222222222 */
+}
+
+#overlay-nav-items ul {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#overlay-nav-items ul a {
+  color: white;
 }
 
 nav ul {
@@ -184,10 +222,10 @@ li {
     text-align: left;
   }
   
-  .nav-button {
+  #nav-button {
     display: none;
   }
-  
+
   nav ul {
     display: flex;
     flex-direction: row;
