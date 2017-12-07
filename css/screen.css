@@ -264,6 +264,17 @@ li {
     display: none;
   }
 
+  .flexbox header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .no-flexbox h1 {
+    float: left;
+  }
+
   .flexbox nav ul {
     display: flex;
     flex-direction: row;
@@ -272,9 +283,26 @@ li {
     padding-bottom: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
   }
 
+  .no-flexbox nav ul {
+    display: block;
+    float: right;
+  }
+
+  .no-flexbox nav li {
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+    padding-left: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+    padding-right: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+  }
+
   .main-profile {
     min-width: 33%;
     max-width: 33%;
+  }
+
+  .no-flexbox .main-profile {
+    clear: both;
   }
 
 }
@@ -287,13 +315,6 @@ li {
   body {
     margin-right: 3.8372%; /* 33 / 860 = 3.8372% */
     margin-left: 3.8372%; /* 33 / 860 = 3.8372% */
-  }
-
-  .flexbox header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
   }
 
   nav {
