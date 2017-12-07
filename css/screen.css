@@ -132,6 +132,24 @@ footer {
   color: white;
 }
 
+#info-dialog{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  width: 60%;
+  height: 70%;
+  left: 20%;
+  top: 15%;
+  background-color: white;
+  z-index: 10;
+  border-radius: 1em;
+  padding: 1em;
+  -webkit-box-shadow: -1em 0.2em 2em -1em rgba(0,0,0,0.7);
+  -moz-box-shadow: -1em 0.2em 2em -1em rgba(0,0,0,0.7);
+  box-shadow: -1em 0.2em 2em -1em rgba(0,0,0,0.7);
+}
+
 nav ul {
   display: none;
 }
@@ -162,6 +180,20 @@ strong {
 
 li {
   padding-bottom: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
+}
+
+.project-button {
+  color: white;
+  background-color: black;
+  font-size: 0.6em;
+  padding: 0.6111111111em;
+  border: none;
+}
+
+.project-button:hover {
+  color: black;
+  background-color: white;
+  border: 0.4em inset black;
 }
 
 /* Layout Styles */

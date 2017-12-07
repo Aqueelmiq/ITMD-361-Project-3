@@ -33,6 +33,13 @@
 
     </header>
 
+    <aside id="info-dialog">
+      <p id="dialog-text">
+        Nothing to Show...
+      </p>
+      <button id="dialog-close-button" class="project-button"> Close </button>
+    </aside>
+
     <main id="content">
       <article>
         <h2> Resume </h2>
@@ -110,7 +117,7 @@
         <section id="projects">
           <h3> Projects </h3>
           <ol class="list">
-            <li class="project-card">
+            <li class="project-card" id="cheat-app">
               <article>
                 <h4> Cheat Diet - Fitness App </h4>
                 <figure class="card-image">
@@ -121,9 +128,10 @@
                   <li> Engineered algorithms to lookup food data and calculate time in 9 different exercises to burn calories. </li>
                   <li> Improved search accuracy by 36% using N-gram based algorithm. Deployed REST api to manage nutrition info. </li>
                 </ul>
+                <button id="cheat-app-btn" class="project-button"> Know More </button>
               </article>
             </li>
-            <li class="project-card">
+            <li class="project-card" id="heal-app">
               <article>
                 <h4> Heal - ‘Uber’ for people in need of care </h4>
                 <figure class="card-image">
@@ -134,9 +142,10 @@
                   <li> Connects sick/elderly to caretakers nearby using live data. Incorporated a rating system for better searching. </li>
                   <li> Coded a native iOS app in 36hrs, streams live user data. Won 4 awards and grand prize for automation hack. </li>
                 </ul>
+                <button id="heal-app-btn" class="project-button"> Know More </button>
               </article>
             </li>
-            <li class="project-card">
+            <li class="project-card" id="almanac-app">
               <article>
                 <h4> Almanac - A Social Calendar for busy planners </h4>
                 <figure class="card-image">
@@ -147,6 +156,7 @@
                   <li> Integrated Google and Outlook calendars/todo lists with Facebook API. Manage, share and view friends’ calendars. </li>
                   <li> Implemented a heat map based social calendar UI to plan social/business events for groups effectively. </li>
                 </ul>
+                <button id="almanac-app-btn" class="project-button"> Know More </button>
               </article>
             </li>
           </ol>
