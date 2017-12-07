@@ -86,12 +86,16 @@ footer {
   padding-top: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
 }
 
+.nav-button {
+  background-color: rgba(0,0,0,0);
+  font-size: 0.75em;
+  padding: 0.6111111111em;
+  margin: 0.6111111111em;
+  border: 0.6111111111em dashed black;
+}
+
 nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
-  padding-bottom: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+  display: none;
 }
 
 img {
@@ -178,6 +182,18 @@ li {
     margin-right: 3.4375%; /* 22 / 640 = 3.4375% */
     margin-left: 3.4375%;; /* 22 / 640 = 3.4375% */
     text-align: left;
+  }
+  
+  .nav-button {
+    display: none;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
   }
 
   .main-profile {
