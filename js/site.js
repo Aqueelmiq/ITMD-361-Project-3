@@ -111,15 +111,21 @@
         });
     };
 
-    $("#cheat-app-btn").click(function(){
-        var details = findDetail("cheat-app");
-        $("#project-title").text(details.title);
-        $("#project-img").attr("src", details.img_url);
-        $("long-descr").text(details.long_desr);
-        appendAsList(details.languages, "#project-languages")
-        appendAsList(details.frameworks, "#project-frameworks")
-        appendAsList(details.tools, "#project-tools")
-        $("#info-dialog").show();
-    });
+    var addDialogFor = function(name, btn) {
+        $(btn).click(function(){
+            var details = findDetail(name);
+            $("#project-title").text(details.title);
+            $("#project-img").attr("src", details.img_url);
+            $("long-descr").text(details.long_desr);
+            appendAsList(details.languages, "#project-languages")
+            appendAsList(details.frameworks, "#project-frameworks")
+            appendAsList(details.tools, "#project-tools")
+            $("#info-dialog").show();
+        });
+    }
+
+    addDialogFor("cheat-app", "#cheat-app-btn");
+    addDialogFor("heal-app", "#heal-app-btn");
+    addDialogFor("almanac-app", "#almanac-app-btn");
 
 }(jQuery));
