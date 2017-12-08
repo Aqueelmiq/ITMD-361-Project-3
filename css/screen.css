@@ -157,6 +157,11 @@ li {
   color: white;
 }
 
+#overlay-nav-head {
+  color: white;
+  padding-top: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+}
+
 .flexbox #info-dialog {
   display: block;
   position: fixed;
