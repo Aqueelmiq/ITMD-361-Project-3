@@ -121,18 +121,18 @@ li {
 #nav-button {
   background-color: rgba(0,0,0,0);
   font-size: 0.75em;
-  padding: 0.6111111111em;
-  margin: 0.6111111111em;
-  border: 0.6111111111em dashed black;
+  padding: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
+  margin: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
+  border: 0.6111111111em dashed black; /* 11 / 18 = 0.6111111111 */
 }
 
 #nav-close-button {
   color: white;
   background-color: rgba(0,0,0,0);
   font-size: 0.6em;
-  padding: 0.6111111111em;
-  margin: 0.6111111111em;
-  border: 0.4em solid white;
+  padding: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
+  margin: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
+  border: 0.3055555555em solid white; /* 5.5 / 18 = 0.3055555555 */
 }
 
 #nav-overlay {
@@ -179,16 +179,6 @@ li {
   box-shadow: -1em 0.2em 2em -1em rgba(0,0,0,0.7);
 }
 
-.flexbox #project-skills {
-  display: flex;
-  justify-content: space-between;
-}
-
-.no-flexbox .project-skillset {
-  float: left;
-  min-width: 33%;
-}
-
 .project-button {
   color: white;
   background-color: black;
@@ -201,6 +191,10 @@ li {
   color: black;
   background-color: white;
   border: 0.4em inset black;
+}
+
+#dialog-close-button {
+  margin-bottom: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
 }
 
 /* Layout Styles */
@@ -296,6 +290,20 @@ li {
     clear: both;
   }
 
+  .flexbox #project-skills {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .no-flexbox .project-skillset {
+    float: left;
+    min-width: 33%;
+  }
+  
+  .project-button {
+    font-size: 0.85em;
+  }
+
 }
 
 @media screen and (min-width: 860px) {
@@ -356,11 +364,6 @@ li {
 
   .no-flexbox section {
     clear: both;
-  }
-
-  .list li {
-    min-width: 47.325581%; /* 407 / 860 = 47.325581% */
-    max-width: 47.325581%; /* 407 / 860 = 47.325581% */
   }
 
   .text-card, .project-card {

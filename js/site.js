@@ -99,6 +99,8 @@
       appendAsList(details.frameworks, "#project-frameworks");
       appendAsList(details.tools, "#project-tools");
       $("#info-dialog").show();
+      $("#info-dialog").scrollTop(0);
+      
     });
   };
 
