@@ -100,7 +100,7 @@
       appendAsList(details.tools, "#project-tools");
       $("#info-dialog").show();
       $("#info-dialog").scrollTop(0);
-      
+      $('body').css('overflow','hidden')
     });
   };
 
@@ -109,14 +109,17 @@
 
   $("#nav-button").click(function(){
     $("#nav-overlay").show();
+    $('body').css('overflow','hidden')
   });
 
   $("#nav-close-button").click(function(){
     $("#nav-overlay").hide();
+    $('body').css('overflow','auto')
   });
 
   $("#dialog-close-button").click(function(){
     $("#info-dialog").hide();
+    $('body').css('overflow','auto')
   });
 
   addDialogFor("cheat-app", "#cheat-app-btn");
