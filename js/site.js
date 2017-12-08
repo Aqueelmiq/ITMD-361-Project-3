@@ -93,7 +93,8 @@
       var details = findDetail(name);
       $("#project-title").text(details.title);
       $("#project-img").attr("src", details.img_url);
-      $("long-descr").text(details.long_desr);
+      $("#long-descr").text(details.long_desr);
+      $("#project-caption").text(details.caption)
       appendAsList(details.languages, "#project-languages");
       appendAsList(details.frameworks, "#project-frameworks");
       appendAsList(details.tools, "#project-tools");
