@@ -349,6 +349,10 @@ li {
   .no-flexbox .main-profile {
     float: left;
   }
+  
+  .no-flexbox #home-main article {
+    overflow: auto;
+  }
 
   #contact-list {
     text-align: center;
